@@ -81,3 +81,22 @@
    ![34. kép](./images/express_mysql/kep_034.png)
 4. És az eredmény az egyik márkára szűrés után.
    ![35. kép](./images/express_mysql/kep_035.png)
+
+## views/partials mappa
+
+1. Hozzunk létre egy **.prettierignore** nevű állományt, ahová azokat a mappákat, állományokat írjuk, amelyekre nem szeretnénk, ha hatna a **Prettier** extension.
+   ![36. kép](./images/express_mysql/kep_036.png)
+2. A **views** mappában hozzunk létre egy **partials** nevű mappát. Lépjünk be és szúrjunk be két állományt **header_01.ejs** és **header_01.ejs** néven. Ezekben fogjuk a későbbiekben szerkeszteni az **ejs** állományok fejrészét. Létre lehet még hozni egy közös **footer.ejs** állományt is, de ez nem kötelező.
+   ![37. kép](./images/express_mysql/kep_037.png)
+3. A **.prettierignore** állományba írjuk be a következő sort. Tehát letiltottuk a **Prettier** használatát ebben a mappában.
+   ![38. kép](./images/express_mysql/kep_038.png)
+4. Másoljuk át a **headers_01.ejs** állományba az **index.ejs** első néhány sorát.
+   ![39. kép](./images/express_mysql/kep_039.png)
+5. Tegyük meg ugyanezt az utolsó néhány sorával a **footer.ejs**-be.
+   ![40. kép](./images/express_mysql/kep_040.png)
+6. Szerkesszük az **index.ejs** állományt. Hasonlóan tegyünk a **feltolt.ejs** állománnyal.
+   ![41. kép](./images/express_mysql/kep_041.png)
+7. A **header_02.ejs** csak minimálisan különbözik a **header_01.ejs**-től, de viszont ott lényegesen. Ezt az **egyedi.ejs** és **modosit.ejs** állományokba kell berakni.
+   ![42. kép](./images/express_mysql/kep_042.png)
+8. Utolsó feladatként a **server.js** állományban, minden **render** metódusban helyezzünk el **title** tulajdonságot (property).
+   ![43. kép](./images/express_mysql/kep_043.png)
